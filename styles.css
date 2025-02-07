@@ -1,0 +1,24 @@
+.sticky-alert {
+    position: fixed; /* Make the alert fixed on the screen */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure the alert is above other elements */
+    max-width: 300px; /* Optional: Limit the width of the alert */
+    animation: slideIn 0.5s ease-out; /* Optional: Add a slide-in animation */
+}
+
+/* Optional: Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.list .btn{
+    --bs-btn-font-size: .65rem;
+}
