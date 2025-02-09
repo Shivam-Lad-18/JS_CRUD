@@ -24,8 +24,7 @@ function addProduct(){
         return; 
     }
 
-    let productId = Date.now().toString();
-    productId = Name +"_"+ productId;
+    let productId =  btoa(Date.now().toString());
     let product = {
         id:productId,
         name: Name,

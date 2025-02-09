@@ -6,7 +6,9 @@
     max-width: 300px; /* Optional: Limit the width of the alert */
     animation: slideIn 0.5s ease-out; /* Optional: Add a slide-in animation */
 }
-
+.prod_id{
+    font-size: 0.8rem;
+}
 /* Optional: Slide-in animation */
 @keyframes slideIn {
     from {
