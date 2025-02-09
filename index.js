@@ -11,9 +11,9 @@ function listProducts() {
         let newItem = document.createElement('div');
         newItem.innerHTML = `
         <div class="d-flex flex-column mt-4 justify-content-center align-items-center">
-        <img src="images/Noprod.jpg" class="w-25" alt="No product found!"/>
-        <h4 class="mt-3">No product found!</h4>
-    </div>
+            <img src="images/Noprod.jpg" class="w-25" alt="No product found!"/>
+            <h4 class="mt-3">No product found!</h4>
+        </div>
         `;
         list.appendChild(newItem);
     } else {
