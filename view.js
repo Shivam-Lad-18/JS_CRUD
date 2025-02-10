@@ -10,7 +10,7 @@ function listProduct(){
      <div class="card rounded-2">
             <div class="d-flex flex-md-nowrap flex-wrap ">
                 <div class=" img-cont d-flex justify-content-center  w-md-100">
-                    <img src="${prod.image}" alt="prod" width="300px">
+                    <img src="${prod.image}" alt="prod" width="300px " onerror="this.onerror=null;this.src='images/noimage.jpg';">
                 </div>
                 <div class="detail-cont">
                     <ul class="list-group list-group-flush">

@@ -18,7 +18,6 @@ function addProduct(){
     let Img = document.getElementById("P_img").value.trim();
 
     // const imageLinkRegex = /^(https?:\/\/.*\.(?:png|jpe?g|gif|webp|bmp|svg))(?:[\?#].*)?$/i;
-
     // if (!imageLinkRegex.test(Img)) {
     //     alert('Please enter a valid image link (e.g., https://example.com/image.png).');
     //     return; 
