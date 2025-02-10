@@ -63,23 +63,23 @@ function listProducts() {
             products.forEach(item => {
                 let newItem = document.createElement('div');
                 newItem.innerHTML = `
-                    <div class="card shadow items" style="width: 15rem;">
-                        <img src="${item.image}" class="card-img-top" alt="...">
-                        <div class="card-body p-0">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h5 class="mb-0 item_name">${item.name}</h5>
-                                </li>
-                                <li class="list-group-item">₹ ${item.price}</li>
-                                <li class="list-group-item prod_id">Id : ${item.id}</li>
-                            </ul>
-                            <div class="d-flex justify-content-evenly my-2">
-                                <a href="viewproduct.html?id=${item.id}" class="btn btn-outline-primary">View</a>
-                                <a href="updateproduct.html?id=${item.id}" class="btn btn-outline-primary">Edit</a>
-                                <button onclick="deleteProduct('${item.id}')" href="#" class="btn btn-outline-danger">Delete</button>
-                            </div>
-                        </div>
-                    </div>`;
+                <div class="card shadow items" style="max-width: 15rem;">
+                <img src="${item.image}" class="card-img-top" alt="..." style="width: 100%; height: auto;" onerror="this.onerror=null;this.src='images/noimage.jpg';">
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="mb-0 item_name">${item.name}</h5>
+                        </li>
+                        <li class="list-group-item">₹ ${item.price}</li>
+                        <li class="list-group-item prod_id">Id : ${item.id}</li>
+                    </ul>
+                    <div class="d-flex justify-content-evenly my-2">
+                        <a href="viewproduct.html?id=${item.id}" class="btn btn-outline-primary">View</a>
+                        <a href="updateproduct.html?id=${item.id}" class="btn btn-outline-primary">Edit</a>
+                        <button onclick="deleteProduct('${item.id}')" href="#" class="btn btn-outline-danger">Delete</button>
+                    </div>
+                </div>
+            </div>`;
                 list.appendChild(newItem);
             });
         }
