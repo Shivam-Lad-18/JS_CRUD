@@ -9,7 +9,7 @@
 .prod_id{
     font-size: 0.8rem;
 }
-/* Optional: Slide-in animation */
+/* Slide-in animation for error toast */
 @keyframes slideIn {
     from {
         transform: translateX(100%);

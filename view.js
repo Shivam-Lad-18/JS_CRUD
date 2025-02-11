@@ -1,10 +1,13 @@
+// Listen for the DOM to be fully loaded before running the list function
 document.addEventListener('DOMContentLoaded', listProduct);
 
+// function to list products
 function listProduct(){
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
     let prod = JSON.parse(localStorage.getItem(productId));
-    console.log(prod);
+
+    // populate elements in HTML
     let newele = document.createElement("div");
     newele.innerHTML=`
      <div class="card rounded-2">

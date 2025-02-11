@@ -1,4 +1,7 @@
+// function to list product
 function listProducts() {
+
+    // Select the elements
     let list = document.getElementById("list");
     const sortRadios = document.querySelectorAll('input[name="options"]');
     const searchBox = document.getElementById("searchBox");
@@ -101,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     listProducts();
 });
 
+// delete product function
 function deleteProduct(productId) {
     if (confirm('Delete this product !!')) {
         console.log(productId);
