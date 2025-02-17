@@ -12,7 +12,8 @@
 // https://images.pexels.com/photos/2866796/pexels-photo-2866796.jpeg?auto=compress&cs=tinysrgb&w=600
 
 
-function addProduct(){
+function addProduct(event){
+    event.preventDefault();
     // Selecting elements
     let Name = document.getElementById("P_name").value.trim();
     let Price = document.getElementById("P_price").value.trim();
