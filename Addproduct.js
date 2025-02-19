@@ -59,12 +59,15 @@ function showSuccessAlert() {
     // Hide the alert after 5 seconds
     setTimeout(() => {
         alertElement.classList.add('d-none');
-    }, 3000); // 5000 milliseconds = 5 seconds
-
+    }, 700); // 5000 milliseconds = 5 seconds
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 700);
     // Add event listener to the close button
     let closeButton = alertElement.querySelector('.btn-close');
     closeButton.addEventListener('click', () => {
         alertElement.classList.add('d-none');
     });
 }
+
 
