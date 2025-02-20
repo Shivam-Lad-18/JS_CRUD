@@ -66,7 +66,7 @@ function listProducts() {
             products.forEach(item => {
                 let newItem = document.createElement('div');
                 newItem.innerHTML = `
-                <div class="card shadow items" style="max-width: 15rem;">
+                <div class="card shadow items" style="max-width: 17rem;">
                 <img src="${item.image}" class="card-img-top" alt="..." style="width: 100%; height: auto;min-height:18rem;max-height:18rem;object-fit:contain;" onerror="this.onerror=null;this.src='images/noimage.jpg';">
                 <div class="card-body p-0">
                     <ul class="list-group list-group-flush">
