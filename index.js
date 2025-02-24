@@ -48,7 +48,8 @@ function listProducts() {
         // Filter products based on the search term
         const searchTerm = searchBox.value.trim().toLowerCase();
         if (searchTerm) {
-            products = products.filter(item => item.id.toLowerCase().includes(searchTerm));
+            products = products.filter(item =>  item.id.toLowerCase().includes(searchTerm) || 
+            item.name.toLowerCase().includes(searchTerm)) 
         }
 
         // Render the sorted and filtered products
@@ -57,10 +58,9 @@ function listProducts() {
 
             newItem.innerHTML = `
             <div class="d-flex flex-column mt-5 justify-content-center align-items-center">
-        <img src="images/Noprod.jpg" class="w-25" alt="No product found!"/>
-        <h4 class="mt-3">No product found!</h4>
-    </div>
-            `;
+                <img src="images/Noprod.jpg" class="w-25" alt="No product found!"/>
+                <h4 class="mt-3">No product found!</h4>
+            </div>`;
             list.appendChild(newItem);
         } else {
             products.forEach(item => {

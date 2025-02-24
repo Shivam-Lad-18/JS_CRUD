@@ -29,7 +29,6 @@ function addProduct(event){
 
     // creating object of product and push to local storage
     let productId =  btoa(Date.now().toString());
-    productId = Name+"_"+productId;
     let product = {
         id:productId,
         name: Name,
